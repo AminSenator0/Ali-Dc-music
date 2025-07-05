@@ -362,15 +362,15 @@ module.exports = client => {
         if (interaction.values[0].toLowerCase().startsWith("cha")) link = "https://www.youtube.com/playlist?list=PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl"
         //rap new
         if (interaction.values[0].toLowerCase().startsWith("chi")) link = "https://open.spotify.com/playlist/099W8OShfF1wmVbiJ4HZFA?si=6be344ada4844d63";
-        //Jazz
-        if (interaction.values[0].toLowerCase().startsWith("j")) link = "https://open.spotify.com/playlist/37i9dQZF1DXbITWG1ZJKYt";
-        //blues
-        if (interaction.values[0].toLowerCase().startsWith("b")) link = "https://open.spotify.com/playlist/37i9dQZF1DXd9rSDyQguIk";
+        //pop new
+        if (interaction.values[0].toLowerCase().startsWith("j")) link = "https://youtube.com/playlist?list=PLrd_4w9ffYCj1BaZE3NHlpN7UVY9n9Jts&si=5v-wS501OIKbFSU4";
+        //rap best
+        if (interaction.values[0].toLowerCase().startsWith("b")) link = "https://youtube.com/playlist?list=PLqvfMK2tbpoyExSFNdDxU4-9vfgMY3QJu&si=NHDx8VqOCFcND0ss";
         //amin
         if (interaction.values[0].toLowerCase().startsWith("s")) link = "https://open.spotify.com/playlist/1deLEtaLRAFjtpCuVx17Vr?si=4528ecb09db54db8";
         //magic-release
         if (interaction.values[0].toLowerCase().startsWith("ma")) link = "https://www.youtube.com/watch?v=WvMc5_RbQNc&list=PLYUn4Yaogdagvwe69dczceHTNm0K_ZG3P"
-        //metal
+        //old
         if (interaction.values[0].toLowerCase().startsWith("me")) link = "https://open.spotify.com/playlist/37i9dQZF1DX9qNs32fujYe";
         //heavy metal
         if (interaction.values[0].toLowerCase().startsWith("h")) link = "https://open.spotify.com/playlist/37i9dQZF1DX9qNs32fujYe";

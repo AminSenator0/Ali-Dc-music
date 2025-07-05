@@ -62,7 +62,7 @@ module.exports = {
       new MessageActionRow().addComponents([
         new MessageSelectMenu()
         .setCustomId("MessageSelectMenu")
-        .addOptions(["Mr.Barber", "Amin Senator", "Nima", "RapFarsi New", "Best Persian Pop", "Jazz", "Blues", "Metal", "Magic-Release", "NCS | No Copyright Music", "Default"].map((t, index) => {
+        .addOptions(["Mr.Barber", "Amin Senator", "Nima", "RapFarsi New", "Best Persian Pop", "Best Persian Pop 2025", "Best RapFarsi", "Best Old Irani", "Magic-Release", "NCS | No Copyright Music", "Default"].map((t, index) => {
           return {
             label: t.substr(0, 25),
             value: t.substr(0, 25),
