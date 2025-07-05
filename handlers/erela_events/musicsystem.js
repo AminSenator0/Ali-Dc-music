@@ -368,10 +368,10 @@ module.exports = client => {
         if (interaction.values[0].toLowerCase().startsWith("b")) link = "https://youtube.com/playlist?list=PLqvfMK2tbpoyExSFNdDxU4-9vfgMY3QJu&si=NHDx8VqOCFcND0ss";
         //amin
         if (interaction.values[0].toLowerCase().startsWith("s")) link = "https://open.spotify.com/playlist/1deLEtaLRAFjtpCuVx17Vr?si=4528ecb09db54db8";
-        //magic-release
-        if (interaction.values[0].toLowerCase().startsWith("ma")) link = "https://www.youtube.com/watch?v=WvMc5_RbQNc&list=PLYUn4Yaogdagvwe69dczceHTNm0K_ZG3P"
+        //rap dep
+        if (interaction.values[0].toLowerCase().startsWith("ma")) link = "https://open.spotify.com/playlist/6EARMXIYg3P8BKR5Rsk3F7?si=fa7972900d5c4311"
         //old
-        if (interaction.values[0].toLowerCase().startsWith("me")) link = "https://open.spotify.com/playlist/37i9dQZF1DX9qNs32fujYe";
+        if (interaction.values[0].toLowerCase().startsWith("me")) link = "https://open.spotify.com/playlist/4rtAddK3gTZjOAFhHe8Em4?si=368d4c06553f4530";
         //heavy metal
         if (interaction.values[0].toLowerCase().startsWith("h")) link = "https://open.spotify.com/playlist/37i9dQZF1DX9qNs32fujYe";
       }
