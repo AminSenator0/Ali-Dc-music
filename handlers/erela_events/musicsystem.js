@@ -342,12 +342,12 @@ module.exports = client => {
       }
     }
     if (interaction.isSelectMenu()) {
-      let link = "https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj";
+      let link = "https://soundcloud.com/ihansoloam/sets/mr-barber?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
       if (interaction.values[0]) {
         //ncs | no copyrighted music
         if (interaction.values[0].toLowerCase().startsWith("n")) link = "https://open.spotify.com/playlist/7sZbq8QGyMnhKPcLJvCUFD";
-        //pop
-        if (interaction.values[0].toLowerCase().startsWith("p")) link = "https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj";
+        //mr barber
+        if (interaction.values[0].toLowerCase().startsWith("p")) link = "https://soundcloud.com/ihansoloam/sets/mr-barber?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
         //default
         if (interaction.values[0].toLowerCase().startsWith("d")) link = "https://soundcloud.com/borhan-hb/sets/relax?ref=clipboard&p=a&c=1&si=742283f57b4343dfa9eacca0b786290f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
         //remixes from Magic Release
@@ -356,8 +356,8 @@ module.exports = client => {
         if (interaction.values[0].toLowerCase().startsWith("ro")) link = "https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U";
         //oldgaming
         if (interaction.values[0].toLowerCase().startsWith("o")) link = "https://www.youtube.com/watch?v=iFOAJ12lDDU&list=PLYUn4YaogdahPQPTnBGCrytV97h8ABEav"
-        //gaming
-        if (interaction.values[0].toLowerCase().startsWith("g")) link = "https://open.spotify.com/playlist/4a54P2VHy30WTi7gix0KW6";
+        //nima
+        if (interaction.values[0].toLowerCase().startsWith("g")) link = "https://open.spotify.com/playlist/0A9tOTZJnfnHfdjIwGqnQF?si=TSuB4KK9RPCSFYgRMc71dg%0A";
         //Charts
         if (interaction.values[0].toLowerCase().startsWith("cha")) link = "https://www.youtube.com/playlist?list=PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl"
         //Chill
@@ -366,8 +366,8 @@ module.exports = client => {
         if (interaction.values[0].toLowerCase().startsWith("j")) link = "https://open.spotify.com/playlist/37i9dQZF1DXbITWG1ZJKYt";
         //blues
         if (interaction.values[0].toLowerCase().startsWith("b")) link = "https://open.spotify.com/playlist/37i9dQZF1DXd9rSDyQguIk";
-        //strange-fruits
-        if (interaction.values[0].toLowerCase().startsWith("s")) link = "https://open.spotify.com/playlist/6xGLprv9fmlMgeAMpW0x51";
+        //amin
+        if (interaction.values[0].toLowerCase().startsWith("s")) link = "https://open.spotify.com/playlist/1deLEtaLRAFjtpCuVx17Vr?si=4528ecb09db54db8";
         //magic-release
         if (interaction.values[0].toLowerCase().startsWith("ma")) link = "https://www.youtube.com/watch?v=WvMc5_RbQNc&list=PLYUn4Yaogdagvwe69dczceHTNm0K_ZG3P"
         //metal
