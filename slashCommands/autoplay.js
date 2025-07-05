@@ -19,14 +19,14 @@ module.exports = {
   run: async (client, interaction, cmduser, es, ls, prefix, player, message) => {
     
     //
-    if (!client.settings.get(message.guild.id, "MUSIC")) {
-      return interaction.reply({ephemeral: true, embed : [new MessageEmbed()
-        .setColor(es.wrongcolor)
-        .setFooter(client.getFooter(es))
-        .setTitle(client.la[ls].common.disabled.title)
-        .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
-      ]});
-    }
+    // if (!client.settings.get(message.guild.id, "MUSIC")) {
+    //   return interaction.reply({ephemeral: true, embed : [new MessageEmbed()
+    //     .setColor(es.wrongcolor)
+    //     .setFooter(client.getFooter(es))
+    //     .setTitle(client.la[ls].common.disabled.title)
+    //     .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
+    //   ]});
+    // }
     try {
       //toggle autoplay
       player.set(`autoplay`, !player.get(`autoplay`))
