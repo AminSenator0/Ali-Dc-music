@@ -352,8 +352,8 @@ module.exports = client => {
         if (interaction.values[0].toLowerCase().startsWith("d")) link = "https://soundcloud.com/borhan-hb/sets/relax?ref=clipboard&p=a&c=1&si=742283f57b4343dfa9eacca0b786290f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
         //remixes from Magic Release
         if (interaction.values[0].toLowerCase().startsWith("re")) link = "https://www.youtube.com/watch?v=NX7BqdQ1KeU&list=PLYUn4YaogdahwfEkuu5V14gYtTqODx7R2"
-        //rock
-        if (interaction.values[0].toLowerCase().startsWith("ro")) link = "https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U";
+        //best pop
+        if (interaction.values[0].toLowerCase().startsWith("ro")) link = "https://youtube.com/playlist?list=PLh-yhDk6SCEFJh_ZibDAp1IOZMS5UZp9Y&si=FnejCxZQudlrccTb";
         //oldgaming
         if (interaction.values[0].toLowerCase().startsWith("o")) link = "https://www.youtube.com/watch?v=iFOAJ12lDDU&list=PLYUn4YaogdahPQPTnBGCrytV97h8ABEav"
         //nima
