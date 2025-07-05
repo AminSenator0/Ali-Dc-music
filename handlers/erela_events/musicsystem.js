@@ -344,12 +344,12 @@ module.exports = client => {
     if (interaction.isSelectMenu()) {
       let link = "https://soundcloud.com/ihansoloam/sets/mr-barber?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
       if (interaction.values[0]) {
-        //ncs | no copyrighted music
-        if (interaction.values[0].toLowerCase().startsWith("n")) link = "https://open.spotify.com/playlist/7sZbq8QGyMnhKPcLJvCUFD";
+        //chill
+        if (interaction.values[0].toLowerCase().startsWith("n")) link = "https://open.spotify.com/playlist/3c0Nv5CY6TIaRszlTZbUFk?si=a3628b3d75b14253";
         //mr barber
         if (interaction.values[0].toLowerCase().startsWith("p")) link = "https://soundcloud.com/ihansoloam/sets/mr-barber?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
-        //default
-        if (interaction.values[0].toLowerCase().startsWith("d")) link = "https://soundcloud.com/borhan-hb/sets/relax?ref=clipboard&p=a&c=1&si=742283f57b4343dfa9eacca0b786290f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
+        //Sleep
+        if (interaction.values[0].toLowerCase().startsWith("d")) link = "https://open.spotify.com/playlist/1UbVSMJFbBMW8G3J5wUOvu?si=dcb3fc98957d4995";
         //remixes from Magic Release
         if (interaction.values[0].toLowerCase().startsWith("re")) link = "https://www.youtube.com/watch?v=NX7BqdQ1KeU&list=PLYUn4YaogdahwfEkuu5V14gYtTqODx7R2"
         //best pop
