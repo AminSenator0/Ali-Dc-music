@@ -360,8 +360,8 @@ module.exports = client => {
         if (interaction.values[0].toLowerCase().startsWith("g")) link = "https://open.spotify.com/playlist/0A9tOTZJnfnHfdjIwGqnQF?si=TSuB4KK9RPCSFYgRMc71dg%0A";
         //Charts
         if (interaction.values[0].toLowerCase().startsWith("cha")) link = "https://www.youtube.com/playlist?list=PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl"
-        //Chill
-        if (interaction.values[0].toLowerCase().startsWith("chi")) link = "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6";
+        //rap new
+        if (interaction.values[0].toLowerCase().startsWith("chi")) link = "https://open.spotify.com/playlist/099W8OShfF1wmVbiJ4HZFA?si=6be344ada4844d63";
         //Jazz
         if (interaction.values[0].toLowerCase().startsWith("j")) link = "https://open.spotify.com/playlist/37i9dQZF1DXbITWG1ZJKYt";
         //blues
