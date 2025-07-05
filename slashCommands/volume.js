@@ -10,7 +10,7 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
   category: `🎶 Music`,
   aliases: [`vol`],
   description: `Changes the Volume`,
-  usage: `volume <0-150>`,
+  usage: `volume <0-200>`,
   parameters: {
     "type": "music",
     "activeplayer": true,
@@ -23,18 +23,18 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
   run: async (client, interaction, cmduser, es, ls, prefix, player, message) => {
     
     //
-    if (!client.settings.get(message.guild.id, "MUSIC")) {
-      return interaction.reply({ephemeral: true, embeds : [new MessageEmbed()
-        .setColor(es.wrongcolor)
-        .setFooter(client.getFooter(es))
-        .setTitle(client.la[ls].common.disabled.title)
-        .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
-      ]});
-    }
+    // if (!client.settings.get(message.guild.id, "MUSIC")) {
+    //   return interaction.reply({ephemeral: true, embeds : [new MessageEmbed()
+    //     .setColor(es.wrongcolor)
+    //     .setFooter(client.getFooter(es))
+    //     .setTitle(client.la[ls].common.disabled.title)
+    //     .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
+    //   ]});
+    // }
     try {
       let args = [interaction.options.getInteger("volume")]
       //if the Volume Number is out of Range return error msg
-      if (Number(args[0]) <= 0 || Number(args[0]) > 150)
+      if (Number(args[0]) <= 0 || Number(args[0]) > 200)
         return interaction.reply({embeds:  [new MessageEmbed()
           .setColor(es.wrongcolor)
           .setTitle(eval(client.la[ls]["cmds"]["music"]["volume"]["variable1"]))

@@ -24,14 +24,14 @@ module.exports = {
 		const { member } = interaction;
     const { guild } = member;
     //
-    if (!client.settings.get(message.guild.id, "MUSIC")) {
-      return interaction.reply({ephemeral: true, embeds :[new MessageEmbed()
-        .setColor(es.wrongcolor)
-        .setFooter(client.getFooter(es))
-        .setTitle(client.la[ls].common.disabled.title)
-        .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
-      ]});
-    }
+    // if (!client.settings.get(message.guild.id, "MUSIC")) {
+    //   return interaction.reply({ephemeral: true, embeds :[new MessageEmbed()
+    //     .setColor(es.wrongcolor)
+    //     .setFooter(client.getFooter(es))
+    //     .setTitle(client.la[ls].common.disabled.title)
+    //     .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
+    //   ]});
+    // }
     try {
       //get the right tracks of the current tracks
       const tracks = player.queue;
