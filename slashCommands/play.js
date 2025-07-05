@@ -13,7 +13,7 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
   parameters: {
     "type": "music",
     "activeplayer": false,
-    "previoussong": false
+    "previoussong": true
   }, 
   options: [ 
 		{"String": { name: "what_song", description: "What Song/Playlist do you want to play? <LINK/SEARCH-QUERY>", required: true }}, 
@@ -21,14 +21,14 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
   run: async (client, interaction, cmduser, es, ls, prefix, player, message) => {
     
     
-//     if (!client.settings.get(message.guild.id, "MUSIC")) {
-//       return interaction.reply({ephemeral: true, embed : [new MessageEmbed()
-//         .setColor(es.wrongcolor)
-//         .setFooter(client.getFooter(es))
-//         .setTitle(client.la[ls].common.disabled.title)
-//         .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
-//       ]});
-//     }
+    if (!client.settings.get(message.guild.id, "MUSIC")) {
+      return interaction.reply({ephemeral: true, embeds:[new MessageEmbed()
+        .setColor(es.wrongcolor)
+        .setFooter(client.getFooter(es))
+        .setTitle(client.la[ls].common.disabled.title)
+        .setDescription(handlemsg(client.la[ls].common.disabled.description, {prefix: prefix}))
+      ]});
+    }
     try {
 
       let args = [interaction.options.getString("what_song")]

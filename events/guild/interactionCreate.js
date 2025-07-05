@@ -179,15 +179,24 @@ module.exports = async (client, interaction) => {
           }
         }
         //if no previoussong
-        if(command.parameters.previoussong){
-          if (!player.queue.previous || player.queue.previous === null){
-            not_allowed = true;
-            return interaction.reply({ephemeral: true, embeds: [new Discord.MessageEmbed()
-              .setColor(es.wrongcolor)
-              .setFooter(client.getFooter(es))
-              .setTitle(client.la[ls].common.nothing_playing)]});
-          }
-        }
+        if (command.parameters.previoussong) {
+  const player = client.manager.players.get(interaction.guild.id);
+
+  // اگر پلیر وجود نداره یا آهنگ قبلی وجود نداره
+  if (!player || !player.queue?.previous) {
+    not_allowed = true;
+    return interaction.reply({
+      ephemeral: true,
+      embeds: [
+        new Discord.MessageEmbed()
+          .setColor(es.wrongcolor)
+          .setFooter(client.getFooter(es))
+          .setTitle(client.la[ls].common.nothing_playing)
+      ]
+    });
+  }
+}
+
         //if not in the same channel --> return
         if (player && channel.id !== player.voiceChannel && !command.parameters.notsamechannel){
           return interaction.reply({ephemeral: true, embeds: [new Discord.MessageEmbed()
