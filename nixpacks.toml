@@ -1,0 +1,11 @@
+[phases.setup]
+nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/refs/tags/21.11.tar.gz"
+
+[phases.build]
+cmds = ["npm install"]
+
+[phases.start]
+cmd = "npm start"
+
+[variables]
+NODE_VERSION = "16.20.2"
