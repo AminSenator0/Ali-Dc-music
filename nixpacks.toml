@@ -1,11 +1,14 @@
-[phases.setup]
-nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/refs/tags/21.11.tar.gz"
+[nixpacks]
+node_version = "16.20.2"
 
-[phases.build]
-cmds = ["npm install"]
+[[nixpacks.packages]]
+name = "gcc"
+type = "runtime"
 
-[phases.start]
-cmd = "npm start"
+[[nixpacks.packages]]
+name = "make"
+type = "runtime"
 
-[variables]
-NODE_VERSION = "16.20.2"
+[[nixpacks.packages]]
+name = "python3"
+type = "runtime"
